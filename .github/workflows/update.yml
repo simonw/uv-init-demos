@@ -1,0 +1,38 @@
+name: Update uv init demos
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 3 * * *'
+  push:
+    paths:
+      - 'update-projects.sh'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install uv
+        run: pip install -U uv
+
+      - name: Run update script
+        run: ./update-projects.sh
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update uv init demos
+
+          Generated with uv $(uv --version)"
+            git push
+          fi
