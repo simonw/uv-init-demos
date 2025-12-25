@@ -65,9 +65,11 @@ add_project_section() {
     echo "" >> README.md
     echo "Files:" >> README.md
     echo "" >> README.md
-    echo "\`\`\`" >> README.md
-    (cd "$dir" && find . -type f | sort) >> README.md
-    echo "\`\`\`" >> README.md
+    (cd "$dir" && find . -type f | sort | while read -r file; do
+        # Remove leading ./ for display
+        display_name="${file#./}"
+        echo "- [$display_name](./$dir/$display_name)"
+    done) >> README.md
     echo "" >> README.md
 }
 
