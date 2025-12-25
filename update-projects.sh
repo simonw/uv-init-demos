@@ -68,9 +68,20 @@ add_project_section() {
     (cd "$dir" && find . -type f | sort | while read -r file; do
         # Remove leading ./ for display
         display_name="${file#./}"
-        echo "- [$display_name](./$dir/$display_name)"
+        # Determine language for syntax highlighting
+        case "$display_name" in
+            *.py) lang="python" ;;
+            *.toml) lang="toml" ;;
+            *.md) lang="markdown" ;;
+            *) lang="" ;;
+        esac
+        echo "#### $display_name"
+        echo ""
+        echo "\`\`\`$lang"
+        cat "$file"
+        echo "\`\`\`"
+        echo ""
     done) >> README.md
-    echo "" >> README.md
 }
 
 add_project_section "uv-init" ""
