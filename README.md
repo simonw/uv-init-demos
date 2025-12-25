@@ -4,28 +4,24 @@ This repository contains examples of projects created with different `uv init` a
 
 Generated using: uv 0.9.18
 
-## Projects
-
-### [uv-init](./uv-init/)
+## [uv-init](./uv-init/)
 
 ```bash
 uv init uv-init
 ```
 
-Files:
-
-#### .python-version
+### .python-version
 
 ```
 3.12
 ```
 
-#### README.md
+### README.md
 
 ```markdown
 ```
 
-#### main.py
+### main.py
 
 ```python
 def main():
@@ -36,7 +32,7 @@ if __name__ == "__main__":
     main()
 ```
 
-#### pyproject.toml
+### pyproject.toml
 
 ```toml
 [project]
@@ -48,26 +44,24 @@ requires-python = ">=3.12"
 dependencies = []
 ```
 
-### [uv-init-package](./uv-init-package/)
+## [uv-init-package](./uv-init-package/)
 
 ```bash
 uv init uv-init-package --package
 ```
 
-Files:
-
-#### .python-version
+### .python-version
 
 ```
 3.12
 ```
 
-#### README.md
+### README.md
 
 ```markdown
 ```
 
-#### pyproject.toml
+### pyproject.toml
 
 ```toml
 [project]
@@ -89,33 +83,31 @@ requires = ["uv_build>=0.9.18,<0.10.0"]
 build-backend = "uv_build"
 ```
 
-#### src/uv_init_package/__init__.py
+### src/uv_init_package/__init__.py
 
 ```python
 def main() -> None:
     print("Hello from uv-init-package!")
 ```
 
-### [uv-init-no-package](./uv-init-no-package/)
+## [uv-init-no-package](./uv-init-no-package/)
 
 ```bash
 uv init uv-init-no-package --no-package
 ```
 
-Files:
-
-#### .python-version
+### .python-version
 
 ```
 3.12
 ```
 
-#### README.md
+### README.md
 
 ```markdown
 ```
 
-#### main.py
+### main.py
 
 ```python
 def main():
@@ -126,7 +118,7 @@ if __name__ == "__main__":
     main()
 ```
 
-#### pyproject.toml
+### pyproject.toml
 
 ```toml
 [project]
@@ -138,26 +130,24 @@ requires-python = ">=3.12"
 dependencies = []
 ```
 
-### [uv-init-app](./uv-init-app/)
+## [uv-init-app](./uv-init-app/)
 
 ```bash
 uv init uv-init-app --app
 ```
 
-Files:
-
-#### .python-version
+### .python-version
 
 ```
 3.12
 ```
 
-#### README.md
+### README.md
 
 ```markdown
 ```
 
-#### main.py
+### main.py
 
 ```python
 def main():
@@ -168,7 +158,7 @@ if __name__ == "__main__":
     main()
 ```
 
-#### pyproject.toml
+### pyproject.toml
 
 ```toml
 [project]
@@ -180,26 +170,24 @@ requires-python = ">=3.12"
 dependencies = []
 ```
 
-### [uv-init-lib](./uv-init-lib/)
+## [uv-init-lib](./uv-init-lib/)
 
 ```bash
 uv init uv-init-lib --lib
 ```
 
-Files:
-
-#### .python-version
+### .python-version
 
 ```
 3.12
 ```
 
-#### README.md
+### README.md
 
 ```markdown
 ```
 
-#### pyproject.toml
+### pyproject.toml
 
 ```toml
 [project]
@@ -218,27 +206,25 @@ requires = ["uv_build>=0.9.18,<0.10.0"]
 build-backend = "uv_build"
 ```
 
-#### src/uv_init_lib/__init__.py
+### src/uv_init_lib/__init__.py
 
 ```python
 def hello() -> str:
     return "Hello from uv-init-lib!"
 ```
 
-#### src/uv_init_lib/py.typed
+### src/uv_init_lib/py.typed
 
 ```
 ```
 
-### [uv-init-bare](./uv-init-bare/)
+## [uv-init-bare](./uv-init-bare/)
 
 ```bash
 uv init uv-init-bare --bare
 ```
 
-Files:
-
-#### pyproject.toml
+### pyproject.toml
 
 ```toml
 [project]
