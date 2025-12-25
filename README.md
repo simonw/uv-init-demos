@@ -10,39 +10,10 @@ Generated using: uv 0.9.18
 uv init uv-init
 ```
 
-### .python-version
-
-```
-3.12
-```
-
-### README.md
-
-```markdown
-```
-
-### main.py
-
-```python
-def main():
-    print("Hello from uv-init!")
-
-
-if __name__ == "__main__":
-    main()
-```
-
-### pyproject.toml
-
-```toml
-[project]
-name = "uv-init"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
-```
+- [.python-version](./uv-init/.python-version)
+- [README.md](./uv-init/README.md)
+- [main.py](./uv-init/main.py)
+- [pyproject.toml](./uv-init/pyproject.toml)
 
 ## [uv-init-package](./uv-init-package/)
 
@@ -50,45 +21,10 @@ dependencies = []
 uv init uv-init-package --package
 ```
 
-### .python-version
-
-```
-3.12
-```
-
-### README.md
-
-```markdown
-```
-
-### pyproject.toml
-
-```toml
-[project]
-name = "uv-init-package"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-authors = [
-    { name = "Demo User", email = "github-actions[bot]@users.noreply.github.com" }
-]
-requires-python = ">=3.12"
-dependencies = []
-
-[project.scripts]
-uv-init-package = "uv_init_package:main"
-
-[build-system]
-requires = ["uv_build>=0.9.18,<0.10.0"]
-build-backend = "uv_build"
-```
-
-### src/uv_init_package/__init__.py
-
-```python
-def main() -> None:
-    print("Hello from uv-init-package!")
-```
+- [.python-version](./uv-init-package/.python-version)
+- [README.md](./uv-init-package/README.md)
+- [pyproject.toml](./uv-init-package/pyproject.toml)
+- [src/uv_init_package/__init__.py](./uv-init-package/src/uv_init_package/__init__.py)
 
 ## [uv-init-no-package](./uv-init-no-package/)
 
@@ -96,39 +32,10 @@ def main() -> None:
 uv init uv-init-no-package --no-package
 ```
 
-### .python-version
-
-```
-3.12
-```
-
-### README.md
-
-```markdown
-```
-
-### main.py
-
-```python
-def main():
-    print("Hello from uv-init-no-package!")
-
-
-if __name__ == "__main__":
-    main()
-```
-
-### pyproject.toml
-
-```toml
-[project]
-name = "uv-init-no-package"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
-```
+- [.python-version](./uv-init-no-package/.python-version)
+- [README.md](./uv-init-no-package/README.md)
+- [main.py](./uv-init-no-package/main.py)
+- [pyproject.toml](./uv-init-no-package/pyproject.toml)
 
 ## [uv-init-app](./uv-init-app/)
 
@@ -136,39 +43,10 @@ dependencies = []
 uv init uv-init-app --app
 ```
 
-### .python-version
-
-```
-3.12
-```
-
-### README.md
-
-```markdown
-```
-
-### main.py
-
-```python
-def main():
-    print("Hello from uv-init-app!")
-
-
-if __name__ == "__main__":
-    main()
-```
-
-### pyproject.toml
-
-```toml
-[project]
-name = "uv-init-app"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
-```
+- [.python-version](./uv-init-app/.python-version)
+- [README.md](./uv-init-app/README.md)
+- [main.py](./uv-init-app/main.py)
+- [pyproject.toml](./uv-init-app/pyproject.toml)
 
 ## [uv-init-lib](./uv-init-lib/)
 
@@ -176,47 +54,11 @@ dependencies = []
 uv init uv-init-lib --lib
 ```
 
-### .python-version
-
-```
-3.12
-```
-
-### README.md
-
-```markdown
-```
-
-### pyproject.toml
-
-```toml
-[project]
-name = "uv-init-lib"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-authors = [
-    { name = "Demo User", email = "github-actions[bot]@users.noreply.github.com" }
-]
-requires-python = ">=3.12"
-dependencies = []
-
-[build-system]
-requires = ["uv_build>=0.9.18,<0.10.0"]
-build-backend = "uv_build"
-```
-
-### src/uv_init_lib/__init__.py
-
-```python
-def hello() -> str:
-    return "Hello from uv-init-lib!"
-```
-
-### src/uv_init_lib/py.typed
-
-```
-```
+- [.python-version](./uv-init-lib/.python-version)
+- [README.md](./uv-init-lib/README.md)
+- [pyproject.toml](./uv-init-lib/pyproject.toml)
+- [src/uv_init_lib/__init__.py](./uv-init-lib/src/uv_init_lib/__init__.py)
+- [src/uv_init_lib/py.typed](./uv-init-lib/src/uv_init_lib/py.typed)
 
 ## [uv-init-bare](./uv-init-bare/)
 
@@ -224,13 +66,5 @@ def hello() -> str:
 uv init uv-init-bare --bare
 ```
 
-### pyproject.toml
-
-```toml
-[project]
-name = "uv-init-bare"
-version = "0.1.0"
-requires-python = ">=3.12"
-dependencies = []
-```
+- [pyproject.toml](./uv-init-bare/pyproject.toml)
 
