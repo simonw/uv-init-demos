@@ -14,12 +14,10 @@ uv init uv-init
 
 Files:
 
-```
-./.python-version
-./README.md
-./main.py
-./pyproject.toml
-```
+- [.python-version](./uv-init/.python-version)
+- [README.md](./uv-init/README.md)
+- [main.py](./uv-init/main.py)
+- [pyproject.toml](./uv-init/pyproject.toml)
 
 ### [uv-init-package](./uv-init-package/)
 
@@ -29,12 +27,10 @@ uv init uv-init-package --package
 
 Files:
 
-```
-./.python-version
-./README.md
-./pyproject.toml
-./src/uv_init_package/__init__.py
-```
+- [.python-version](./uv-init-package/.python-version)
+- [README.md](./uv-init-package/README.md)
+- [pyproject.toml](./uv-init-package/pyproject.toml)
+- [src/uv_init_package/__init__.py](./uv-init-package/src/uv_init_package/__init__.py)
 
 ### [uv-init-no-package](./uv-init-no-package/)
 
@@ -44,12 +40,10 @@ uv init uv-init-no-package --no-package
 
 Files:
 
-```
-./.python-version
-./README.md
-./main.py
-./pyproject.toml
-```
+- [.python-version](./uv-init-no-package/.python-version)
+- [README.md](./uv-init-no-package/README.md)
+- [main.py](./uv-init-no-package/main.py)
+- [pyproject.toml](./uv-init-no-package/pyproject.toml)
 
 ### [uv-init-app](./uv-init-app/)
 
@@ -59,12 +53,10 @@ uv init uv-init-app --app
 
 Files:
 
-```
-./.python-version
-./README.md
-./main.py
-./pyproject.toml
-```
+- [.python-version](./uv-init-app/.python-version)
+- [README.md](./uv-init-app/README.md)
+- [main.py](./uv-init-app/main.py)
+- [pyproject.toml](./uv-init-app/pyproject.toml)
 
 ### [uv-init-lib](./uv-init-lib/)
 
@@ -74,13 +66,11 @@ uv init uv-init-lib --lib
 
 Files:
 
-```
-./.python-version
-./README.md
-./pyproject.toml
-./src/uv_init_lib/__init__.py
-./src/uv_init_lib/py.typed
-```
+- [.python-version](./uv-init-lib/.python-version)
+- [README.md](./uv-init-lib/README.md)
+- [pyproject.toml](./uv-init-lib/pyproject.toml)
+- [src/uv_init_lib/__init__.py](./uv-init-lib/src/uv_init_lib/__init__.py)
+- [src/uv_init_lib/py.typed](./uv-init-lib/src/uv_init_lib/py.typed)
 
 ### [uv-init-bare](./uv-init-bare/)
 
@@ -90,7 +80,5 @@ uv init uv-init-bare --bare
 
 Files:
 
-```
-./pyproject.toml
-```
+- [pyproject.toml](./uv-init-bare/pyproject.toml)
 
