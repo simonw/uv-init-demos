@@ -13,5 +13,5 @@ dependencies = []
 uv-init-package = "uv_init_package:main"
 
 [build-system]
-requires = ["uv_build>=0.9.28,<0.10.0"]
+requires = ["uv_build>=0.9.29,<0.10.0"]
 build-backend = "uv_build"
