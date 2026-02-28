@@ -2,7 +2,7 @@
 
 This repository contains examples of projects created with different `uv init` arguments.
 
-Generated using: uv 0.10.6
+Generated using: uv 0.10.7
 
 ## Projects
 
