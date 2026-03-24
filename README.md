@@ -2,7 +2,7 @@
 
 This repository contains examples of projects created with different `uv init` arguments.
 
-Generated using: uv 0.10.12 (x86_64-unknown-linux-gnu)
+Generated using: uv 0.11.0 (x86_64-unknown-linux-gnu)
 
 ## Projects
 
