@@ -66,7 +66,7 @@ add_project_section() {
     echo "Files:" >> README.md
     echo "" >> README.md
     echo "\`\`\`" >> README.md
-    (cd "$dir" && find . -type f | sort) >> README.md
+    (cd "$dir" && tree -a --noreport) >> README.md
     echo "\`\`\`" >> README.md
     echo "" >> README.md
 }

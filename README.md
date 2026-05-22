@@ -15,10 +15,11 @@ uv init uv-init
 Files:
 
 ```
-./.python-version
-./README.md
-./main.py
-./pyproject.toml
+.
+├── .python-version
+├── README.md
+├── main.py
+└── pyproject.toml
 ```
 
 ### [uv-init-package](./uv-init-package/)
@@ -30,10 +31,13 @@ uv init uv-init-package --package
 Files:
 
 ```
-./.python-version
-./README.md
-./pyproject.toml
-./src/uv_init_package/__init__.py
+.
+├── .python-version
+├── README.md
+├── pyproject.toml
+└── src
+    └── uv_init_package
+        └── __init__.py
 ```
 
 ### [uv-init-no-package](./uv-init-no-package/)
@@ -45,10 +49,11 @@ uv init uv-init-no-package --no-package
 Files:
 
 ```
-./.python-version
-./README.md
-./main.py
-./pyproject.toml
+.
+├── .python-version
+├── README.md
+├── main.py
+└── pyproject.toml
 ```
 
 ### [uv-init-app](./uv-init-app/)
@@ -60,10 +65,11 @@ uv init uv-init-app --app
 Files:
 
 ```
-./.python-version
-./README.md
-./main.py
-./pyproject.toml
+.
+├── .python-version
+├── README.md
+├── main.py
+└── pyproject.toml
 ```
 
 ### [uv-init-lib](./uv-init-lib/)
@@ -75,11 +81,14 @@ uv init uv-init-lib --lib
 Files:
 
 ```
-./.python-version
-./README.md
-./pyproject.toml
-./src/uv_init_lib/__init__.py
-./src/uv_init_lib/py.typed
+.
+├── .python-version
+├── README.md
+├── pyproject.toml
+└── src
+    └── uv_init_lib
+        ├── __init__.py
+        └── py.typed
 ```
 
 ### [uv-init-bare](./uv-init-bare/)
@@ -91,6 +100,7 @@ uv init uv-init-bare --bare
 Files:
 
 ```
-./pyproject.toml
+.
+└── pyproject.toml
 ```
 
