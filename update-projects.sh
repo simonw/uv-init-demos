@@ -44,8 +44,6 @@ This repository contains examples of projects created with different `uv init` a
 
 Generated using: UV_VERSION_PLACEHOLDER
 
-## Projects
-
 EOF
 
 # Function to add project section
@@ -57,18 +55,29 @@ add_project_section() {
         cmd="uv init $dir $flag"
     fi
 
-    echo "### [$dir](./$dir/)" >> README.md
+    echo "## [$dir](./$dir/)" >> README.md
     echo "" >> README.md
     echo "\`\`\`bash" >> README.md
     echo "$cmd" >> README.md
     echo "\`\`\`" >> README.md
     echo "" >> README.md
-    echo "Files:" >> README.md
-    echo "" >> README.md
-    echo "\`\`\`" >> README.md
-    (cd "$dir" && find . -type f | sort) >> README.md
-    echo "\`\`\`" >> README.md
-    echo "" >> README.md
+    (cd "$dir" && find . -type f | sort | while read -r file; do
+        # Remove leading ./ for display
+        display_name="${file#./}"
+        # Determine language for syntax highlighting
+        case "$display_name" in
+            *.py) lang="python" ;;
+            *.toml) lang="toml" ;;
+            *.md) lang="markdown" ;;
+            *) lang="" ;;
+        esac
+        echo "### $display_name"
+        echo ""
+        echo "\`\`\`$lang"
+        cat "$file"
+        echo "\`\`\`"
+        echo ""
+    done) >> README.md
 }
 
 add_project_section "uv-init" ""
